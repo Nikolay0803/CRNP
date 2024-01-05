@@ -21,6 +21,7 @@ const Header = () => {
     'Грудень'
   ];
   const nameMonth = monthNames[month];
+  
   return (
     <View style={styles.header}>
       <Text style={styles.title}>Генеральний штаб ЗС України інформує</Text>

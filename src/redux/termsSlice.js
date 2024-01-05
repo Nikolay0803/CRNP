@@ -1,9 +1,10 @@
+// termsSlice.js
 import {createSlice} from '@reduxjs/toolkit';
-import { fetchStatistics } from '../axios/statistics';
+import { fetchTerms } from '../axios/terms';
+ // Імпортуйте функцію fetchTerms
 
-
-const statsSlice = createSlice({
-  name: 'stats',
+const termsSlice = createSlice({
+  name: 'terms',
   initialState: {
     data: null,
     status: 'idle',
@@ -12,18 +13,18 @@ const statsSlice = createSlice({
   reducers: {},
   extraReducers: builder => {
     builder
-      .addCase(fetchStatistics.pending, state => {
+      .addCase(fetchTerms.pending, state => {
         state.status = 'loading';
       })
-      .addCase(fetchStatistics.fulfilled, (state, action) => {
+      .addCase(fetchTerms.fulfilled, (state, action) => {
         state.status = 'fulfilled';
         state.data = action.payload;
       })
-      .addCase(fetchStatistics.rejected, (state, action) => {
+      .addCase(fetchTerms.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       });
   },
 });
 
-export default statsSlice.reducer;
+export default termsSlice.reducer;

@@ -4,14 +4,14 @@ import LinearGradient from 'react-native-linear-gradient';
 import Stats from './commons/stats';
 import Header from './commons/header';
 import {useDispatch} from 'react-redux';
-import {addStats} from '../../redux/statsSlice';
+// import {addStats} from '../../redux/statsSlice';
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const test = 'test';
-  useEffect(() => {
-    dispatch(addStats(test));
-  });
+  // const test = 'test';
+  // useEffect(() => {
+  //   dispatch(addStats(test));
+  // });
   return (
     <SafeAreaView>
       <LinearGradient

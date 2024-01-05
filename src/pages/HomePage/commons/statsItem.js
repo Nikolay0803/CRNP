@@ -1,25 +1,14 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
-import {SvgUri} from 'react-native-svg';
+import {View, Text, StyleSheet} from 'react-native';
 
-// ...
 const StatsItem = ({statsAll, statsDay}) => {
-  console.log('statsAll:', statsAll, 'statsDay:', statsDay);
-
   return (
     <View style={styles.statsBlock}>
-      <View>
-        <View style={styles.statsNumbers}>
-          <Text style={styles.statsAll}>{String(statsAll)}</Text>
-          {statsDay !== undefined && (
-            <Text style={styles.statsDay}>({String(statsDay)})</Text>
-          )}
-        </View>
-      </View>
+      <Text style={styles.statsAll}>{statsAll}</Text>
+      <Text style={styles.statsDay}>({statsDay})</Text>
     </View>
   );
 };
-
 
 const styles = StyleSheet.create({
   statsBlock: {
@@ -30,12 +19,12 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     borderBottomWidth: 1,
   },
-  // statsImage: {
-  //   height: 75,
-  //   width: 85,
-  //   marginRight: 30,
-  //   marginLeft: 10,
-  // },
+//   // statsImage: {
+//   //   height: 75,
+//   //   width: 85,
+//   //   marginRight: 30,
+//   //   marginLeft: 10,
+//   // },
   statsAll: {
     fontSize: 24,
     fontWeight: '900',
@@ -47,15 +36,15 @@ const styles = StyleSheet.create({
     color: 'black',
     marginLeft: 10,
   },
-  // statsText: {
-  //   fontSize: 18,
-  //   color: 'black',
-  // },
-  statsNumbers: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
+//   // statsText: {
+//   //   fontSize: 18,
+//   //   color: 'black',
+//   // },
+//   statsNumbers: {
+//     display: 'flex',
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//   },
 });
 
 export default StatsItem;

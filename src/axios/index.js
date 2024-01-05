@@ -24,7 +24,7 @@ export const axiosRequest = async ({
       headers,
     });
 
-    return response; // змінивши тут
+    return response;
   } catch (error) {
     console.error('Axios Request Error:', error);
     throw error;
