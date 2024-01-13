@@ -7,7 +7,6 @@ export const fetchTerms = createAsyncThunk('terms/fetchTerms', async () => {
       url: `/terms/${lang}`,
       method: 'GET',
     });
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error('Error fetching terms:', error);

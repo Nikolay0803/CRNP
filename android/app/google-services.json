@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322766137208",
+    "project_id": "deadruss-1502b",
+    "storage_bucket": "deadruss-1502b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322766137208:android:c77076b75737d8c4018a8d",
+        "android_client_info": {
+          "package_name": "com.crnp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFEWoCWDvrKWEAZpOiSeri3GFlMO-7g8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

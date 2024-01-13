@@ -1,4 +1,3 @@
-// axiosRequest.js
 import axios from 'axios';
 
 axios.defaults.baseURL = 'https://russianwarship.rip/api/v2';

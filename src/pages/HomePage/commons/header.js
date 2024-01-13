@@ -1,27 +1,27 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const Header = () => {
+const Header = ({warDay}) => {
   const now = new Date();
   const month = now.getMonth();
-  const day = now.getDate()
+  const day = now.getDate();
 
   const monthNames = [
-    'Січень',
-    'Лютий',
-    'Березень',
-    'Квітень',
-    'Травень',
-    'Червень',
-    'Липень',
-    'Серпень',
-    'Вересень',
-    'Жовтень',
-    'Листопад',
-    'Грудень'
+    'Січня',
+    'Лютого',
+    'Березня',
+    'Квітеня',
+    'Травеня',
+    'Червеня',
+    'Липня',
+    'Серпня',
+    'Вересня',
+    'Жовтня',
+    'Листопада',
+    'Грудня',
   ];
   const nameMonth = monthNames[month];
-  
+
   return (
     <View style={styles.header}>
       <Text style={styles.title}>Генеральний штаб ЗС України інформує</Text>
@@ -29,8 +29,14 @@ const Header = () => {
         Загальні бойові втрати російського окупанта
       </Text>
       <View style={styles.blockData}>
-        <Text style={styles.data}>{day} {nameMonth}</Text>
-        <Text style={styles.day}>659-й день війни</Text>
+        <Text style={styles.data}>
+          {day} {nameMonth}
+        </Text>
+        <Text style={styles.day}>
+          { warDay !== undefined
+            ? `${warDay}-й день війни`
+            : ''}
+        </Text>
       </View>
     </View>
   );

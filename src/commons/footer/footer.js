@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   const onPressLinkedin = () => {
-    Linking.openURL('www.linkedin.com/in/mykola-maslakai-28318027a');
+    Linking.openURL(`https://www.linkedin.com/in/mykola-maslakai-28318027a`);
   };
   return (
     <View style={styles.footer}>

@@ -10,7 +10,6 @@ export const fetchStatistics = createAsyncThunk(
         url: `/statistics/${date}`,
         method: 'GET',
       });
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.error('Error fetching statistics:', error);
