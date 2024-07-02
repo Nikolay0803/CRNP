@@ -5,7 +5,7 @@ Teclology stack [React-native, JS, Redux, Firebase]
 
 Main and Info pages
 
-![Main page](https://github.com/darynakarmazin/healthy_hub_project/raw/main/src/images/readmeImg/1.png)
+![Main and Info pages](https://github.com/Nikolay0803/CRNP/blob/main/example-photo/DeadRuss-shots_so.png)
 
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
