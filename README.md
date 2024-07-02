@@ -1,3 +1,13 @@
+## DeadRuss
+“Deadruss” is a mobile application developed using React Native for the Android platform. This application provides reliable and detailed information about the losses of the invaders in the war. Here are some features: information search: The application allows users to find detailed information about the enemy’s losses in the war, all information provided in the application is reliable and verified, this application was developed using React Native, making it accessible to Android users. React-native, JS, Redux, Firebase
+
+Teclology stack [React-native, JS, Redux, Firebase]
+
+Main and Info pages
+
+![Main page](https://github.com/darynakarmazin/healthy_hub_project/raw/main/src/images/readmeImg/1.png)
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
